@@ -15,9 +15,6 @@ class Speakers:
 
     def getLanguages(self):
         if self.__speakers:
-            # lang_dictionary = {}
-            # for i in self.__speakers:
-            #     lang_dictionary.update({i["DisplayName"]: i["Locale"]})
             return self.__speakers
         else:
             print("First send the request for getting languages!")
