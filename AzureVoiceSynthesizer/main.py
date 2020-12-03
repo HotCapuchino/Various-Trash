@@ -1,6 +1,8 @@
 from Speakers import Speakers
 from Authorizer import Authorizer
 from VoiceSynthesizer import Synthesizer
+from Calculate import calculateAmountOfLetters
+from Calculate import calculateDurationOfAudio
 
 file_name = input("Enter name of the file, you want to be synthesized: ")
 try:
@@ -46,7 +48,15 @@ try:
         user_prefferences.update({"text": text_to_be_synthesized})
         synth = Synthesizer(user_prefferences)
         response = synth.getAudio(token=token)
-        print(response)
+        if response == -1:
+            print(response)
+        else:
+            with open("res/" + file_name.split(".")[0] + ".wav", "wb") as output:
+                output.write(response)
+            output.close()
+            amount_of_letters = calculateAmountOfLetters("res/" + file_name)
+            duration = calculateDurationOfAudio("res/" + file_name.split(".")[0] + ".wav")
+            print("Duration per letter: ", duration / amount_of_letters, " sec")
         f.close()
 except FileNotFoundError:
     print("File can't be found!")
