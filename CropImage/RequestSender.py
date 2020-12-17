@@ -4,7 +4,7 @@ import requests
 class Connector:
     __url = "https://fdfhsf.cognitiveservices.azure.com/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false" \
         "&recognitionModel=recognition_03&returnRecognitionModel=false&detectionModel=detection_02"
-    __key = "11953edd085047358fb48de93cac6dad"
+    __key = "paste your key here"
 
     def __init__(self, binary_data):
         self.binary_data = binary_data
