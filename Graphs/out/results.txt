@@ -1,0 +1,17 @@
+1 Graph has cycles with the length of four: False
+2 Graph has cycles with the length of four: False
+3 Graph has cycles with the length of four: False
+4 Graph has cycles with the length of four: True
+5 Graph has cycles with the length of four: True
+6 Graph has cycles with the length of four: False
+7 Graph has cycles with the length of four: True
+8 Graph has cycles with the length of four: True
+9 Graph has cycles with the length of four: False
+10 Graph has cycles with the length of four: False
+11 Graph has cycles with the length of four: True
+12 Graph has cycles with the length of four: True
+13 Graph has cycles with the length of four: True
+14 Graph has cycles with the length of four: True
+15 Graph has cycles with the length of four: False
+16 Graph has cycles with the length of four: False
+17 Graph has cycles with the length of four: False
